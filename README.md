@@ -6,7 +6,20 @@ Meta-huristic algorithm implementation：
 * Paticle Swarm Optimization(PSO)
 * Ant Colony Optimization(ACO)
 
-### Final project :
-Optimization of restaurant logistics distribution routes－Solving TSP problem by Meta-huristic algorithm  
-* 隨著物流配送業的興起，尋找各個站點之間的最短路徑成為運營商降低配送成本的重要關鍵。 因此，本專案想為配料經銷商設計一條配送路線。本專案決定尋找 16 家米其林星級餐廳，並為送貨員找到最短路線，其中餐廳之間的距離使用google地圖的真實路線來計算。 
-* 本專案使用4種不同的最佳化演算法來解決此問題，分別為蟻群最佳化演算法、基因演算法、粒子群演算法、模擬退火法，其中演算法參數採用實驗設計的方法決定。
+## Final project－Optimization of Restaurant Logistics Delivery Routes
+
+In order to reduce the delivery cost, finding the shortest path between each point is crucial for the operator. Hence, this project aims to identify 16 restaurants and determine the shortest delivery route among them. The distances between restaurants will be calculated using the actual road distances from Google Maps. This problem can be considered as a combinatorial optimization problem.
+
+### Heuristic Algorithms
+Four heuristic algorithms, namely Ant Colony Optimization (ACO), Genetic Algorithm (GA), Particle Swarm Optimization (PSO), and Simulated Annealing (SA), were employed to solve the problem.
+
+### Parameter Experiment Design
+The parameters for each algorithm were set using a full factorial experimental design method. Additionally, each algorithm was executed 100 times to ensure stability.
+
+### Optimization Results
+
+Both Simulated Annealing and Ant Colony Optimization algorithms achieved the optimal solution for the problem. However, the Particle Swarm Optimization algorithm demonstrated the fastest convergence time.
+
+### Result Analysis
+
+The Ant Colony Optimization algorithm exhibited the best effectiveness and consistency. It almost consistently reached the optimal solution in all of the 100 experiments, converging at iteration 100 each time. This indicates that the algorithm performed well and showed relative stability for this specific problem.
